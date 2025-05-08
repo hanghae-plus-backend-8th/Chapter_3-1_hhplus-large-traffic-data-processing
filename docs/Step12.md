@@ -183,3 +183,5 @@ public class BatchComponent {
 
 - 다만, Redis 클러스터 구성은 인프라 복잡도가 증가하므로 로컬 캐시를 활용한 2계층 캐시 전략 (2-Layered Caching)을 적용하면
   좋을 것 같습니다.
+
+- 온프레미스에서 Redis 서버를 구축할 시, 적절한 maxmemory, maxmemory-policy 옵션을 설정하여 OOM 이슈를 방지해야할 것 같습니다.
